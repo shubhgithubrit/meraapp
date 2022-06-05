@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:meraapp/Phone.dart';
 import 'package:meraapp/detail/detail.dart';
 import 'package:meraapp/screens/finalHome.dart';
 
@@ -17,7 +18,7 @@ class _BaarState extends State<Baar> {
   var pages = [
     Fhome(),
     Detailpage1(),
-    Fhome(),
+    Phone1(),
   ];
   var index = 0;
   Widget build(BuildContext context) {

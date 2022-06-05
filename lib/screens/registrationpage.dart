@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meraapp/model/user_model.dart';
+import 'package:meraapp/screens/Fancy.dart';
 import 'package:meraapp/screens/Homepageroop.dart';
 import 'package:meraapp/screens/SaraswatiMaa.dart';
 import 'package:meraapp/screens/finalHome.dart';
@@ -284,6 +285,6 @@ class _RegistorState extends State<Registor> {
         .set(usermodel.toMap());
     Fluttertoast.showToast(msg: "account Created successfully!");
     Navigator.pushAndRemoveUntil(context,
-        MaterialPageRoute(builder: (context) => Fhome()), (route) => false);
+        MaterialPageRoute(builder: (context) => Baar()), (route) => false);
   }
 }

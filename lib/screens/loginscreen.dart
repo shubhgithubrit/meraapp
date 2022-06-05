@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 //import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meraapp/screens/Fancy.dart';
 import 'package:meraapp/screens/Homepageroop.dart';
 import 'package:meraapp/screens/finalHome.dart';
 //import 'package:meraapp/screens/demo1.dart';
@@ -111,7 +112,6 @@ class _LoginScreen1State extends State<LoginScreen1> {
               icon: const Icon(Icons.arrow_back))),
       backgroundColor: Colors.black,
       body: Center(
-        
         child: SingleChildScrollView(
             child: Container(
           color: Colors.black,
@@ -191,7 +191,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 Fluttertoast.showToast(msg: "Login Successfully"),
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Fhome()),
+                    builder: ((context) => Baar()),
                   ),
                 ),
               })

@@ -35,9 +35,10 @@ class PC10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text('Products Catalog'),
+          backgroundColor: Colors.purple,
           actions: [
             GestureDetector(
               child: Padding(
@@ -69,7 +70,8 @@ class PC10 extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: Image.network(controller.pw[index].imageUrl),
-                    title: Text(controller.pw[index].productName),
+                    title: Text(controller.pw[index].productName,
+                        style: TextStyle(color: Colors.white)),
                     subtitle: Text(controller.pw[index].price.toString()),
                     trailing: ElevatedButton(
                       child: const Text('Add'),
